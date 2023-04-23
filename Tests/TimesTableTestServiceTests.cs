@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using TimesTableTester.Services;
 using Xunit;
 
 namespace TimesTableTester.Tests;
@@ -15,7 +16,7 @@ public class TimesTableTestServiceTests
         for (var index = 0; index <= 100; index++)
         {
             // Act
-            var multiplier = _sut.GetMultiplier();
+            var multiplier = _sut.GenerateMultiplier();
 
             // Assert
             multiplier.Should().BeGreaterThanOrEqualTo(1);
