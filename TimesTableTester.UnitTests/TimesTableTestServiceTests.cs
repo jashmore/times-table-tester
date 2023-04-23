@@ -1,8 +1,6 @@
 ﻿using FluentAssertions;
 using TimesTableTester.Services;
-using Xunit;
-
-namespace TimesTableTester.Tests;
+namespace TimesTableTester.UnitTests;
 
 public class TimesTableTestServiceTests
 {
